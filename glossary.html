@@ -1,0 +1,582 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary Page</title>
+  </head>
+  <style>
+    @font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-ExtraLight.ttf");
+    font-weight: 100;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Light.ttf");
+    font-weight: 200;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Thin.ttf");
+    font-weight: 300;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-ExtraBold.ttf");
+    font-weight: 800;
+}
+@font-face {
+  font-family: "Onyinye";
+  src:
+    local("Inter"),
+    url("Inter-Black.ttf");
+    font-weight: 900;
+}
+    dt {
+      font-weight: bold;
+      font-size: 100px;
+      color: blue;
+    }
+    dd {
+      margin-bottom: 15px;
+    }
+body{
+  font-family: "Onyinye", sans-serif;
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+nav li {
+  margin: 0 10px;
+}
+nav h1{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar{
+   background-color: blue;
+   padding-top: 20px;
+   margin: 0 auto;
+}
+nav a {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  color: red;
+}
+html{
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+} 
+.flex{
+  display: flex;
+}
+p{
+ margin: 0;
+}
+/*body {
+  background-image: url("logo.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}  */
+.nav-item {
+      color: red; /* Change this to the desired text color */
+    }
+dl{
+  max-width: 800px;
+  margin:auto;
+}
+.title{
+  font-weight:bold;
+  padding-bottom: 30px;
+  color: blue;
+}
+input[type="text"] {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 20px;
+ background-color: rgb(25, 0, 255);
+ border-color: white;
+ position: relative;
+ right: -100px;
+}
+.navbar-nav{
+  display: flex;
+}
+.line {
+  border-top: 1px solid black;
+  width: 1000px;
+  padding-top: 10px;
+}
+  </style>
+<body>
+  <nav class="navbar">
+    <h1>Website Glossary</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#A">A</a></li>
+      <li class="nav-item"><a class="nav-link" href="#B">B</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#C">C</a></li>
+      <li class="nav-item"><a class="nav-link" href="#D">D</a></li>
+      <li class="nav-item"><a class="nav-link" href="#E">E</a></li>
+      <li class="nav-item"><a class="nav-link" href="#F">F</a></li>
+      <li class="nav-item"><a class="nav-link" href="#G">G</a></li>
+      <li class="nav-item"><a class="nav-link" href="#H">H</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#I">I</a></li>
+      <li class="nav-item"><a class="nav-link" href="#J">J</a></li>
+      <li class="nav-item"><a class="nav-link" href="#K">K</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#L">L</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#M">M</a></li>
+      <li class="nav-item"><a class="nav-link" href="#N">N</a></li>
+      <li class="nav-item"><a class="nav-link" href="#O">O</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#P">P</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Q">Q</a></li>
+      <li class="nav-item"><a class="nav-link" href="#R">R</a></li>
+      <li class="nav-item"><a class="nav-link" href="#S">S</a></li>
+      <li class="nav-item"><a class="nav-link" href="#T">T</a></li>
+      <li class="nav-item"><a class="nav-link" href="#U">U</a></li>
+      <li class="nav-item"><a class="nav-link" href="#V">V</a></li>
+      <li class="nav-item"><a  class="nav-link"href="#W">W</a></li>
+      <li class="nav-item"><a class="nav-link" href="#X">X</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Y">Y</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Z">Z</a></li>
+      <input type="text" id="searchInput" placeholder="Search...">
+    </ul>
+  </nav>
+  </div>
+</div>
+  <dl id="glossary">
+    <div id="A" class="flex">
+      <div>
+    <dt>A</dt>
+      </div>
+    <div>  
+    <dd><p class="title">Absolute (absol.)</p> <p class="description"> The term absolute refers to the use of a word or phrase on its own when it would usually be accompanied by another word or phrase.</p></dd>
+    <dd><p class="title">Abstract</p> <p  class="description">  An abstractnoun denotes something immaterial such as an idea, quality, state, or action (as opposed to a concrete noun, which denotes a physical object, place, person, or animal).</p></dd>
+    <dd><p class="title">Accusative</p> <p  class="description">  In some inflected languages, the accusativecase is used to indicate nouns and pronouns (as well as adjectives used to modify them) which function as the direct object of a verb.</p></dd>
+    <dd><p class="title">Active</p> <p  class="description">  In an active sentence or clause , the grammatical subject typically refers to the person or thing which carries out or causes the action expressed by the verb.</p></dd>
+    <dd><p class="title">Adjective</p> <p  class="description">  An adjective is a word expressing an attribute and qualifying a noun, noun phrase, or pronoun so as to describe it more fully. For example, the underlined words in the following are adjectives: the old man; a delicious piece of cake; nuclear weapons; she is sensible.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="B" class="flex"> 
+    <div>
+  <dt>B</dt>
+    </div>
+    <div>
+    <dd><p class="title">Balmy (adj.)</p> <p class="description">	Something that is moderate and pleasant.</p></dd>
+    <dd><p class="title">Bask (n.)</p> <p class="description">	To enjoy a happy or comfortable situation.</p></dd>
+    <dd><p class="title">Beam (n.)</p> <p class="description">	A column of light.</p></dd>
+    <dd><p class="title">Balk</p> <p class="description"> Refuse to proceed or comply.</p></dd>
+    <dd><p class="title">Ballad</p> <p class="description"> A narrative song with a recurrent refrain.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="C" class="flex">
+    <div>
+    <dt>C</dt>
+    </div>
+    <div>
+    <dd><p class="title">Cataphoric</p> <p class="description"> A cataphoric word or phrase is one which refers forward to a word or phrase used subsequently in a text or conversation. Pronouns are frequently used cataphorically: for example, in ‘If you see him, please tell Bob to call’, him is cataphoric, referring forward to Bob. A related term is anaphoric, which describes words or phrases which refer back.</p></dd>
+    <dd><p class="title">Causative</p> <p class="description">  A causative verb (or sense of a verb) is one that expresses causation: for example, raise can be described as a causative verb (as it means ’cause to rise’) and spill is causative in ‘I spilled the milk’ (meaning ‘I caused the milk to spill’).</p></dd>
+    <dd><p class="title">Clause</p> <p class="description">  A clause is a grammatical unit which typically contains a verb (or verb phrase), and which may be a complete sentence in itself or may form part of a sentence.</p></dd>
+    <dd><p class="title">Cognate object</p> <p class="description">  When the direct object of a verb is related to that verb in both form and meaning, it is a cognate object. For example, in she sang a beautiful song and I dreamed a dream, the nouns song and dream are cognate objects, as they are related to the verbs sing and dream.</p></dd>
+    <dd><p class="title">Collective Noun</p> <p class="description"> A collective noun is a noun which, in its singular form, refers to a group of people or things considered collectively. Collective nouns in English include audience, committee, family, parliament, and team.</p> </dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="D" class="flex">
+    <div>
+    <dt>D</dt>
+    </div>
+    <div>
+    <dd><p class="title">Dative</p> <p class="description">  In some inflected languages, the dative case is typically used to indicate nouns and pronouns (as well as adjectives used to modify them) which function as the indirect object of a verb.</p></dd>
+    <dd><p class="title">Declarative</p> <p class="description">   A declarative sentence or clause typically makes a statement, and has basic word order, with the subject followed by the verb. For example, ‘I must leave now’ is a declarative sentence. Declaratives are contrasted with interrogatives (such as ‘Must you leave now?’) and imperatives (such as ‘Leave now!’).</p></dd>
+    <dd><p class="title">Demonstrative</p> <p class="description">   A demonstrative is one of a small set of words which limit the application of nouns by indicating the person or thing ref erred to. In modern standard English, the demonstratives are this, these, those, and that. There are two main types of demonstratives: demonstrative pronouns (which stand in place of a noun, as in ‘this is my book’) and demonstrative determiners (which precede a noun, as in ‘this book is mine’).</p></dd>
+    <dd><p class="title">Determiner</p> <p class="description">  A determiner is a word which precedes a noun and limits the application of that noun, for example the in ‘the park’, some in ‘some cheese’ and both in ‘both boys’.Articles (the, a, and an) and demonstratives (this, these, that, and those) are specific types of determiners.</p></dd>
+    <dd><p class="title">Direct Question</p> <p class="description"> A direct question is a question which is quoted as actually spoken (that is, in direct speech), rather than being reported.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="E" class="flex">
+    <div>
+    <dt>E</dt>
+    </div>
+    <div>
+    <dd><p class="title">Ebullient</p> <p class="description"> Joyously unrestrained.</p></dd>
+    <dd><p class="title">Eclectic</p> <p class="description">  Selecting what seems best of various styles or ideas.</p></dd>
+    <dd><p class="title">Edible</p> <p class="description">  Suitable for use as food.</p></dd>
+    <dd><p class="title">Edify</p> <p class="description">  Make understand.</p></dd>
+    <dd><p class="title">Efface</p> <p class="description"> Rremove by or as if by rubbing or erasing.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="F" class="flex">
+    <div>
+    <dt>F</dt>
+    </div>
+    <div>
+    <dd><p class="title">Feminine</p> <p class="description">  In modern English, feminine forms are those which refer to females: the pronounsshe, her, hers, herself, the possessive adjectiveher, and a few suffixes such as ess.</p></dd>
+    <dd><p class="title">Filler</p> <p class="description">  A filler, or conversational filler, is a word or phrase used without lexical meaning, simply to fill in what might otherwise be an unwanted pause in an utterance or conversation.</p></dd>
+    <dd><p class="title">Finite</p> <p class="description">  A finite verb form is one that is marked for tense. For example, in ‘The children ate’, ate is a finite verb, marked for past tense. Finite verbs are often used in combination with non-finite verbs: for example, in ‘The children were eating’, the verb phrase were eating is made up of the finite verb were (which is the past tenseplural form of be) and the non-finite verb eating (the present participle of eat).</p></dd>
+    <dd><p class="title">First person</p> <p class="description">   Pronouns in the first person indicate the person (or group of people) speaking or writing. The first person pronouns (and related possessive adjectives) in modern standard English are I, me, my, mine, myself; we, us, our, ours, ourselves. See also person, second person, third person.</p></dd>
+    <dd><p class="title">Fabricate</p> <p class="description">    Put together out of artificial or natural components.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="G" class="flex">
+    <div>
+    <dt>G</dt>
+    </div>
+    <div>
+    <dd><p class="title">Gender</p> <p class="description">  In some languages, nouns, pronouns, and related words are classified into categories called genders, which are distinguished by particular inflections. Grammatical genders include masculine, feminine, and neuter, but they are usually only loosely associated with particular sexes, and many words have a grammatical gender which does not correspond to the sex of the referent. For example, Old English wifmann ‘woman’ had masculine gender.</p></dd>
+    <dd><p class="title">Genitive</p> <p class="description">   In some inflected languages, the genitivecase is used to indicate possession, close relationship, and similar concepts. Old English, as an inflected language, possessed a genitive case, which is reflected in modern standard English in pronouns and determiners (e.g. his, our) and in the ‘s in, for example, John’s book, which is the modern equivalent of the old genitive case ending -es. These survivals of the genitive case in modern English are generally classified as possessive.</p></dd>
+    <dd><p class="title">Gerund</p> <p class="description">   A gerund is a word (in modern English, ending in ing) which derives from a verb and has some verb-like properties but also some noun-like properties. For example, in ‘Eating your dinner noisily is impolite’ the gerund eating functions like a noun in that it is the subject of the sentence, but is similar to a verb in that it takes a direct object (your dinner) and is modified by an adverb (noisily).</p></dd>
+    <dd><p class="title">Gaffe</p> <p class="description">  A socially awkward or tactless act.</p></dd>
+    <dd><p class="title">Gallant</p> <p class="description">  Unflinching in battle or action.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="H" class="flex">
+    <div>
+    <dt>H</dt>
+    </div>
+    <div>
+    <dd><p class="title">Habitat</p> <p class="description">  The type of environment in which an organism normally lives.</p></dd>
+    <dd><p class="title">Habitual</p> <p class="description">  Commonly used or practiced.</p></dd>
+    <dd><p class="title">Habitue</p> <p class="description">  A regular patron.</p></dd>
+    <dd><p class="title">Hackneyed</p> <p class="description">  Repeated too often; overfamiliar through overuse.</p></dd>
+    <dd><p class="title">Haggard</p> <p class="description">  Showing the wearing effects of overwork or care or suffering.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="I" class="flex">
+    <div>
+    <dt>I</dt>
+    </div>
+    <div>
+    <dd><p class="title">Iconoclast</p> <p class="description">  Someone who attacks cherished ideas or institutions.</p></dd>
+    <dd><p class="title">Idealistic</p> <p class="description">  Motivated by noble or moral beliefs rather than practicality.</p></dd>
+    <dd><p class="title">Ideological</p> <p class="description">  Concerned with or suggestive of mental concepts.</p></dd>
+    <dd><p class="title">Idiom</p> <p class="description">  Expression whose meaning cannot be inferred from its words.</p></dd>
+    <dd><p class="title">Idiosyncrasy</p> <p class="description">  A behavioral attribute peculiar to an individual.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="J" class="flex">
+    <div>
+    <dt>J</dt>
+    </div>
+    <div>
+    <dd><p class="title">Jaded</p> <p class="description"> Bored or apathetic after experiencing too much of something.</p></dd>
+    <dd><p class="title">Jargon</p> <p class="description"> Technical terminology characteristic of a particular subject.</p></dd>
+    <dd><p class="title">Jaunt</p> <p class="description">  A journey taken for pleasure.</p></dd>
+    <dd><p class="title">Jaunty</p> <p class="description">  Having a cheerful, lively, and self-confident air.</p></dd>
+    <dd><p class="title">Jeer</p> <p class="description"> Laugh at with contempt and derision.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="K" class="flex">
+    <div>
+    <dt>K</dt>
+    </div>
+    <div>
+    <dd><p class="title">Ken</p> <p class="description"> Range of what one can know or understand.</p></dd>
+    <dd><p class="title">Kindle</p> <p class="description">  Cause to start burning.</p></dd>
+    <dd><p class="title">Kinetic</p> <p class="description">  Characterized by motion.</p></dd>
+    <dd><p class="title">Kinship</p> <p class="description">  Relatedness or connection by blood or marriage or adoption.v</dd>
+    <dd><p class="title">Knave</p> <p class="description">  A deceitful and unreliable scoundrel.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="L" class="flex">
+    <div>
+    <dt>L</dt>
+    </div>
+    <div>
+    <dd><p class="title">Labile</p> <p class="description">  Readily undergoing change or breakdown.</p></dd>
+    <dd><p class="title">Lachrymose</p> <p class="description">  Showing sorrow.</p></dd>
+    <dd><p class="title">Lackadaisical</p> <p class="description">  Idle or indolent especially in a dreamy way.</p></dd>
+    <dd><p class="title">Lackluster</p> <p class="description">  Not having brilliance or vitality.</p></dd>
+    <dd><p class="title">Laconic</p> <p class="description">  Brief and to the point.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="M" class="flex">
+    <div>
+    <dt>M</dt>
+    </div>
+    <div>
+    <dd><p class="title">Macabre</p> <p class="description">  Shockingly repellent; inspiring horror.</p></dd>
+    <dd><p class="title">Machination</p> <p class="description">  A crafty and involved plot to achieve your end.</p></dd>
+    <dd><p class="title">Maculate</p> <p class="description">  Spot, stain, or pollute.</p></dd>
+    <dd><p class="title">Maelstrom</p> <p class="description"> A powerful circular current of water.v</dd>
+    <dd><p class="title">Magnanimous</p> <p class="description"> Noble and generous in spirit.v</dd>
+      <p class="line"></p>  
+  </div>
+  </div>
+  <div id="N" class="flex">
+    <div>
+    <dt>N</dt>
+    </div>
+    <div>
+    <dd><p class="title">Nadir</p> <p class="description"> The lowest point of anything.</p></dd>
+    <dd><p class="title">Naive</p> <p class="description"> Marked by or showing unaffected simplicity.</p></dd>
+    <dd><p class="title">Naivete</p> <p class="description">  Lack of sophistication or worldliness.</p></dd>
+    <dd><p class="title">Narcissist</p> <p class="description">  Someone who is excessively self-centered.</p></dd>
+    <dd><p class="title">Narrative</p> <p class="description">  Consisting of or characterized by the telling of a story.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="O" class="flex">
+    <div>
+    <dt>O</dt>
+    </div>
+    <div>
+    <dd><p class="title">Oasis</p> <p class="description">  A shelter serving as a place of safety or sanctuary.</p></dd>
+    <dd><p class="title">Obdurate</p> <p class="description"> Showing unfeeling resistance to tender feelings.</p></dd>
+    <dd><p class="title">Obedient</p> <p class="description"> Dutifully complying with the commands of those in authority.</p></dd>
+    <dd><p class="title">Obeisance</p> <p class="description"> Bending the head or body in reverence or submission.</p></dd>
+    <dd><p class="title">Obfuscate</p> <p class="description"> Make obscure or unclear.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="P" class="flex">
+    <div>
+    <dt>P</dt>
+    </div>
+    <div>
+    <dd><p class="title">Pacifist</p> <p class="description">  Someone opposed to violence as a means of settling disputes.</p></dd>
+    <dd><p class="title">Palliative</p> <p class="description">  Moderating pain or sorrow by making it easier to bear.</p></dd>
+    <dd><p class="title">Palpable</p> <p class="description">  Able to be felt by tactile examination.</p></dd>
+    <dd><p class="title">Panacea</p> <p class="description">  Hypothetical remedy for all ills or diseases.</p></dd>
+    <dd><p class="title">Pandemic</p> <p class="description">  An outbreak of disease that is geographically widespread.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="Q" class="flex">
+    <div>
+    <dt>Q</dt>
+    </div>
+    <div>
+    <dd><p class="title">Quack</p> <p class="description">  The sound made by a duck.</p></dd>
+    <dd><p class="title">Quadrilateral</p> <p class="description">  A foursided polygon.</p></dd>
+    <dd><p class="title">Quadruped</p> <p class="description"> An animal especially a mammal having four limbs.</p></dd>
+    <dd><p class="title">Quaff</p> <p class="description"> Swallow hurriedly or greedily or in one draught.</p></dd>
+    <dd><p class="title">Quagmire</p> <p class="description">  A soft wet area of lowlying land that sinks underfoot.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="R" class="flex">
+    <div>
+    <dt>R</dt>
+    </div>
+    <div>
+    <dd><p class="title">Raconteur</p> <p class="description"> A person skilled in telling anecdotes.</p></dd>
+    <dd><p class="title">Radical</p> <p class="description"> A person who has revolutionary ideas or opinions.</p></dd>
+    <dd><p class="title">Rambunctious</p> <p class="description"> Noisy and lacking in restraint or discipline.</p></dd>
+    <dd><p class="title">Ramification</p> <p class="description"> A consequence, especially one that causes complications.</p></dd>
+    <dd><p class="title">Rampant</p> <p class="description"> Occurring or increasing in an unrestrained way.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="S" class="flex">
+    <div>
+    <dt>S</dt>
+    </div>
+    <div>
+    <dd><p class="title">Sacrilegious</p> <p class="description"> Grossly irreverent toward what is considered holy.</p></dd>
+    <dd><p class="title">Sacrosanct</p> <p class="description">  Treated as if holy and kept free from violation or criticism.</p></dd>
+    <dd><p class="title">Sagacious</p> <p class="description">  Acutely insightful and wise.</p></dd>
+    <dd><p class="title">Salubrious</p> <p class="description"> Promoting health.</p></dd>
+    <dd><p class="title">Sardonic</p> <p class="description"> Disdainfully or ironically humorous.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="T" class="flex">
+    <div>
+    <dt>T</dt>
+    </div>
+    <div>
+    <dd><p class="title">Tacit</p> <p class="description">  Implied by or inferred from actions or statements.</p></dd>
+    <dd><p class="title">Taciturn</p> <p class="description">  Habitually reserved and uncommunicative.</p></dd>
+    <dd><p class="title">Tactful</p> <p class="description">  Having a sense of what is considerate in dealing with others.</p></dd>
+    <dd><p class="title">Tactile</p> <p class="description">  Of or relating to or proceeding from the sense of touch.</p></dd>
+    <dd><p class="title">Taint</p> <p class="description">  Contaminate with a disease or microorganism.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="U" class="flex">
+    <div>
+    <dt>U</dt>
+    </div>
+    <div>
+    <dd><p class="title">Ubiquitous</p> <p class="description">  Being present everywhere at once.</p>/dd>
+    <dd><p class="title">Ulterior</p> <p class="description">  Lying beyond what is openly revealed or avowed.</p></dd>
+    <dd><p class="title">Ultimatum</p> <p class="description">  A final peremptory demand.</p></dd>
+    <dd><p class="title">Umbrage</p> <p class="description">  A feeling of anger caused by being offended.</p></dd>
+    <dd><p class="title">Unabashed</p> <p class="description">  Not embarrassed.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+    <div id="V" class="flex">
+      <div>
+    <dt>V</dt>
+      </div>
+      <div>
+    <dd><p class="title">Vacate</p> <p class="description">  Leave voluntarily, as a job or position.</p></dd>
+    <dd><p class="title">Vacillate</p> <p class="description">  Be undecided about something.</p></dd>
+    <dd><p class="title">Vacuous</p> <p class="description"> Devoid of intelligence.</p>/dd>
+    <dd><p class="title">Vagary</p> <p class="description"> An unexpected and inexplicable change in something.</p></dd>
+    <dd><p class="title">Vagrant</p> <p class="description">  A wanderer with no established residence or means of support.</p></dd>
+    <p class="line"></p>  
+  </div>
+    </div>
+  <div id="W" class="flex">
+    <div>
+    <dt>W</dt>
+    </div>
+    <div>
+    <dd><p class="title">Wade</p> <p class="description">  Walk through relatively shallow water.</p></dd>
+    <dd><p class="title">Waffle</p> <p class="description">  Pancake batter baked in an iron.</p></dd>
+    <dd><p class="title">Waft</p> <p class="description">  Be driven or carried along, as by the air.</p></dd>
+    <dd><p class="title">Waggish</p> <p class="description">  Witty or joking.</p></dd>
+    <dd><p class="title">Waif</p> <p class="description">  A homeless child especially one forsaken or orphaned.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="X" class="flex">
+    <div>
+    <dt>X</dt>
+    </div>
+    <div>
+    <dd><p class="title">Xenophobia</p> <p class="description">  A fear of foreigners or strangers.</p></dd>
+    <dd><p class="title">Zephyr</p> <p class="description">  A slight wind.</p></dd>
+    <dd><p class="title">Xanthic (adj.)</p> <p class="description">  Having a yellow color.</p></dd>
+    <dd><p class="title">Xenas (n.)</p> <p class="description"> 	Confident, strong woman.</p></dd>
+    <dd><p class="title">Xenagogue (n.)</p> <p class="description"> 	Acting as a guide; guiding someone.</p></dd>
+    <dd><p class="title">Xenial (adj.)</p> <p class="description"> 	Being nice or friendly to foreign visitors.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="Y" class="flex">
+    <div>
+    <dt>Y</dt>
+    </div>
+    <div>
+    <dd><p class="title">Yahoo</p> <p class="description">  A person who is not intelligent or interested in culture.</p></dd>
+    <dd><p class="title">Yearn</p> <p class="description">  Desire strongly or persistently.</p></dd>
+    <dd><p class="title">Yearning</p> <p class="description"> Prolonged unfulfilled desire or need.</p></dd>
+    <dd><p class="title">Yelp</p> <p class="description"> A sharp high-pitched cry.</p></dd>
+    <dd><p class="title">Yen</p> <p class="description">  The basic unit of money in Japan.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  <div id="Z" class="flex">
+    <div>
+    <dt>Z</dt>
+    </div>
+    <div>
+    <dd><p class="title">Zany</p> <p class="description">  Ludicrous or foolish.</p></dd>
+    <dd><p class="title">Zeal</p> <p class="description">  A feeling of strong eagerness.</p></dd>
+    <dd><p class="title">Zealot</p> <p class="description"> A fervent and even militant proponent of something.</p></dd>
+    <dd><p class="title">Zenith</p> <p class="description"> The highest point of something.</p></dd>
+    <dd><p class="title">Zephyr</p> <p class="description"> A slight wind.</p></dd>
+    <p class="line"></p>  
+  </div>
+  </div>
+  </dl>
+  <button id="myBtn">Back To Top</button>
+</body>
+<script>
+  var scrollBackToTopBtn = document.getElementById("myBtn");
+  scrollBackToTopBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  })
+  window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 100) {
+      scrollBackToTopBtn.style.display="block";
+    }else{
+      scrollBackToTopBtn.style.display="none";
+    }
+  })
+  const searchInput = document.getElementById("searchInput");
+const glossary = document.getElementById("glossary").getElementsByTagName("dt");
+
+searchInput.addEventListener("input", function() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  for (let i = 0; i < glossary.length; i++) {
+    const term = glossary[i].textContent.toLowerCase();
+
+    if (term.includes(searchTerm)) {
+      glossary[i].style.display = "block";
+      glossary[i].nextElementSibling.style.display = "block";
+    } else {
+      glossary[i].style.display = "none";
+      glossary[i].nextElementSibling.style.display = "none";
+    }
+  }
+});
+</script>
+</html>
